@@ -24,7 +24,7 @@ describe("Wave 3", () => {
 
       // Assertions come first because they need to be ready before the function call.
       setHandlers(
-        done, // No assertions.  We just care that it finished.
+        () => done(), // No assertions.  We just care that it finished.
         fail);
 
       // Act.
